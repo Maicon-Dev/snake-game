@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'retro';
+  src: url(./fonts/retro-gaming.ttf);
+}
+
+@keyframes text-blink {
+  0% { opacity: 0; }
+  25% { opacity: .5; }
+  50% { opacity: 1; }
+  75% { opacity: .5; }
+  100% { opacity: 0; }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #02000f;
+}
+
+.content {
+  display: flex;
+  justify-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  font-family: 'retro';
+  color: yellow;
+  font-size: 32px;
+  animation: text-blink 2s linear infinite;
+}
+
+.game-scope {
+  width: 400px;
+  height: 400px;
+  border: solid yellow 5px;
+  position: relative;
+  
+}
+
+.snake-area {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+#food-area {
+  background-color: red;
+}
