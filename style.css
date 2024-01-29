@@ -57,3 +57,7 @@ body {
 #food-area {
   background-color: red;
 }
+
+#score-text {
+  margin-bottom: 0;
+}
